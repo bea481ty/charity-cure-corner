@@ -4,12 +4,12 @@ import { CATEGORIES, PRODUCTS } from "@/lib/shop";
 import { ProductCard } from "@/components/ProductCard";
 import { PageHeader } from "@/components/BottomNav";
 
-type S = { q?: string; cat?: string };
+type S = { q?: string | undefined; cat?: string | undefined };
 
 export const Route = createFileRoute("/shop")({
   validateSearch: (s: Record<string, unknown>): S => ({
-    q: typeof s.q === "string" && s.q ? s.q : undefined,
-    cat: typeof s.cat === "string" && s.cat ? s.cat : undefined,
+    q: typeof s["q"] === "string" && s["q"] ? s["q"] : undefined,
+    cat: typeof s["cat"] === "string" && s["cat"] ? s["cat"] : undefined,
   }),
   head: () => ({
     meta: [
