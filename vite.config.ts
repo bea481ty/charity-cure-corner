@@ -15,7 +15,7 @@ const pwaPlugins = VitePWA({
   strategies: "generateSW", filename: "sw.js", registerType: "autoUpdate",
   injectRegister: null, manifest: false, devOptions: { enabled: false },
   integration: { configureOptions(config, options) {
-    options.outDir = config.environments?.client?.build.outDir ?? "dist/client";
+    options.outDir = config.environments?.['client']?.build.outDir ?? "dist/client";
   } },
   workbox: {
     globPatterns: ["**/*.{js,css,png,jpg,jpeg,svg,webp,woff,woff2,webmanifest}"],
@@ -25,7 +25,7 @@ const pwaPlugins = VitePWA({
     additionalManifestEntries: offlinePaths.map(path => ({ url: `${path}?offline-shell=1`, revision: new Date().toISOString() })),
     runtimeCaching: [
       ...offlinePaths.map(path => ({
-        urlPattern: ({ request, url }: { request: Request; url: URL }) => request.mode === "navigate" && url.pathname === path,
+        urlPattern: new RegExp(`^https?:\\/\\/[^/]+${path.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?:\\?|$)`),
         handler: "NetworkFirst" as const,
         options: { cacheName: "ccc-pages", networkTimeoutSeconds: 4,
           cacheableResponse: { statuses: [200] }, expiration: { maxEntries: 50, maxAgeSeconds: 7 * 24 * 60 * 60 },
