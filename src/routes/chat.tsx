@@ -56,7 +56,7 @@ function Chat() {
         <a href={whatsappLink(lastMine)} target="_blank" rel="noopener noreferrer" className="mt-2 flex items-center justify-center gap-2 rounded-full bg-accent py-2.5 text-sm font-semibold text-accent-foreground"><MessageCircle className="h-4 w-4" />Send to Charity on WhatsApp</a>
       </div>
       <form onSubmit={(e) => { e.preventDefault(); send(text); }} className="fixed inset-x-0 bottom-[72px] z-30 mx-auto flex max-w-md gap-2 bg-background px-5 py-2">
-        <input aria-label="Message" value={text} onChange={(e) => setText(e.target.value)} placeholder="Type a message…" className="flex-1 rounded-full border border-border bg-card px-4 py-2 text-sm outline-none" />
+        <input aria-label="Message" value={text} onChange={(e) => setText(e.target.value)} placeholder="Type a message…" className="min-w-0 flex-1 rounded-full border border-border bg-card px-4 py-2 text-sm outline-none" />
         <button type="submit" aria-label="Send" className="rounded-full bg-primary p-2.5 text-primary-foreground"><Send className="h-4 w-4" /></button>
       </form>
     </div>
