@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import { CartProvider } from "@/lib/shop";
 import { BottomNav } from "@/components/BottomNav";
+import { AppInstall } from "@/components/AppInstall";
 import { Toaster } from "@/components/ui/sonner";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -81,21 +82,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Charity's Cure Corner – Your Neighbour Chemist" },
+      { name: "description", content: "Medicines and wellness from your neighbour chemist in Agbor. Open 8am–8pm." },
+      { property: "og:title", content: "Charity's Cure Corner" },
+      { property: "og:description", content: "Your Neighbour Chemist in Agbor, Delta State." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "theme-color", content: "#245336" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-title", content: "Cure Corner" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "default" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "manifest", href: "/manifest.webmanifest" },
+      { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "stylesheet",
@@ -131,6 +136,7 @@ function RootComponent() {
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <CartProvider>
         <div className="min-h-screen bg-background">
+          <AppInstall />
           <Outlet />
           <BottomNav />
         </div>

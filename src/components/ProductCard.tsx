@@ -6,8 +6,8 @@ import { formatNaira, useCart, type Product } from "@/lib/shop";
 export function ProductCard({ p }: { p: Product }) {
   const { add } = useCart();
   return (
-    <div className="flex flex-col rounded-2xl bg-card p-4 shadow-sm">
-      <Link to="/product/$id" params={{ id: p.id }} className="flex flex-1 flex-col">
+    <div className="flex min-w-0 flex-col rounded-2xl bg-card p-4 shadow-sm">
+      <Link to="/product/$id" params={{ id: p.id }} className="flex min-w-0 flex-1 flex-col [overflow-wrap:anywhere]">
         <div className="mb-3 flex h-20 items-center justify-center rounded-xl bg-muted text-primary"><Pill className="h-8 w-8" /></div>
         <p className="text-sm font-bold">{p.name}</p>
         <p className="text-xs text-muted-foreground">{p.note}</p>

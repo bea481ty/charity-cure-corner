@@ -1,0 +1,18 @@
+{
+  "id": "/",
+  "name": "Charity's Cure Corner",
+  "short_name": "Cure Corner",
+  "description": "Your Neighbour Chemist — medicines, wellness and baby care in Agbor.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf5e6",
+  "theme_color": "#245336",
+  "lang": "en-NG",
+  "categories": ["medical", "health", "shopping"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
