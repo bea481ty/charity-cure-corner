@@ -19,7 +19,7 @@ export const Route = createFileRoute("/checkout")({
 });
 
 function Checkout() {
-  const { lines, total, clear } = useCart();
+  const { lines, total } = useCart();
   const [form, setForm] = useState({ name: "", phone: "", method: "Pickup", address: "", note: "" });
   const [error, setError] = useState("");
   const [sent, setSent] = useState<string | null>(null);
@@ -27,11 +27,11 @@ function Checkout() {
   if (sent) {
     return (
       <div className="mx-auto max-w-md pb-28">
-        <PageHeader title="Order sent" />
+        <PageHeader title="Order ready" />
         <div className="px-5 pt-10 text-center">
           <CheckCircle2 className="mx-auto h-16 w-16 text-primary" />
-          <p className="mt-4 font-semibold">Thank you! Your order has been sent to Charity on WhatsApp.</p>
-          <p className="mt-2 text-sm text-muted-foreground">If WhatsApp didn't open, tap below.</p>
+          <p className="mt-4 font-semibold">Your order is ready. Tap Send in WhatsApp to send it to Charity.</p>
+          <p className="mt-2 text-sm text-muted-foreground">Your cart is kept until you empty it. If WhatsApp didn't open, tap below.</p>
           <a href={sent} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block rounded-full bg-accent px-5 py-2 font-semibold text-accent-foreground">Open WhatsApp</a>
           <div><Link to="/" className="mt-4 inline-block text-sm font-semibold text-primary underline">Back home</Link></div>
         </div>
@@ -53,6 +53,10 @@ function Checkout() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!navigator.onLine) {
+      setError("You're offline. Reconnect to send your order. Your cart and details are kept here.");
+      return;
+    }
     if (!form.name.trim() || !/^\+?\d{10,14}$/.test(form.phone.replace(/\s/g, ""))) {
       setError("Please enter your name and a valid phone number.");
       return;
@@ -62,12 +66,11 @@ function Checkout() {
       return;
     }
     const items = lines
-      .map((l) => { const p = PRODUCTS.find((x) => x.id === l.id)!; return `• ${l.qty} × ${p.name} – ${formatNaira(p.price * l.qty)}`; })
+      .flatMap((l) => { const p = PRODUCTS.find((x) => x.id === l.id); return p ? [`• ${l.qty} × ${p.name} – ${formatNaira(p.price * l.qty)}`] : []; })
       .join("\n");
     const msg = `New order – Charity's Cure Corner\n\n${items}\n\nTotal: ${formatNaira(total)}\n\nName: ${form.name}\nPhone: ${form.phone}\n${form.method}${form.method === "Delivery" ? `: ${form.address}` : ""}${form.note ? `\nNote: ${form.note}` : ""}`;
     const url = whatsappLink(msg);
     window.open(url, "_blank", "noopener");
-    clear();
     setSent(url);
   };
 
