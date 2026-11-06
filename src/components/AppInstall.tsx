@@ -53,7 +53,7 @@ export function AppInstall() {
   return <>
     <div className="mx-auto flex max-w-md items-center justify-between gap-3 border-b border-border px-5 py-2">
       <span className="flex min-w-0 items-center gap-2 text-xs font-semibold text-primary"><img src={icon} alt="" width={28} height={28} className="h-7 w-7 rounded-md" />Your Neighbour Chemist</span>
-      {installed ? <Check aria-label="App installed" className="h-4 w-4 shrink-0 text-primary" /> : <Button size="sm" onClick={install} disabled={busy} className="shrink-0"><Download />{busy ? 'Installing…' : 'Install app'}</Button>}
+      {installed ? <Check aria-label="App installed" className="h-4 w-4 shrink-0 text-primary" /> : <Button size="sm" onClick={install} disabled={busy} className="shrink-0"><Download />{busy ? 'Installing…' : 'Add to Home Screen'}</Button>}
     </div>
     {offline && <p role="status" className="mx-auto flex max-w-md items-center gap-2 bg-muted px-5 py-2 text-xs text-primary"><WifiOff className="h-4 w-4 shrink-0" />Offline · Orders and WhatsApp need internet.</p>}
     {unavailable && !offline && <p role="status" className="mx-auto max-w-md px-5 py-2 text-xs text-muted-foreground">Offline access is unavailable. You can still use the app online.</p>}

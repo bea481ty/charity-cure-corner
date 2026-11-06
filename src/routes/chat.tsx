@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { Send, MessageCircle } from "lucide-react";
+import { Send, MessageCircle, Sparkles } from "lucide-react";
 import { PageHeader } from "@/components/BottomNav";
 import { whatsappLink } from "@/lib/shop";
 
@@ -48,6 +48,7 @@ function Chat() {
     <div className="mx-auto max-w-md pb-44">
       <PageHeader title="Chat with Charity" />
       <div className="space-y-2 px-5 pt-5">
+        <Link to="/ask" className="mb-2 flex items-center justify-center gap-2 rounded-full bg-primary py-2.5 text-sm font-semibold text-primary-foreground"><Sparkles className="h-4 w-4" />Ask a health question (instant advice)</Link>
         {msgs.map((m, i) => (
           <div key={i} className={`max-w-[80%] rounded-2xl px-4 py-2 text-sm ${m.from === "me" ? "ml-auto bg-primary text-primary-foreground" : "bg-card shadow-sm"}`}>{m.text}</div>
         ))}
