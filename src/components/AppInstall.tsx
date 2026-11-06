@@ -64,6 +64,7 @@ export function AppInstall() {
           <p><strong>Android:</strong> In Chrome, open the ⋮ menu and choose “Install app” or “Add to Home screen”.</p>
           <p><strong>Windows and desktop:</strong> In Chrome or Edge, use the install icon in the address bar or “Install this site as an app” in the browser menu.</p>
           <p><strong>iPhone or iPad:</strong> In Safari, tap Share, then “Add to Home Screen”.</p>
+          <a href="https://charity-cure-corner.lovable.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 rounded-full bg-primary py-2.5 font-semibold text-primary-foreground"><Download className="h-4 w-4" />Open the app to install</a>
           <p className="text-muted-foreground">Installation depends on your browser. Open the app online once to save its pages for offline use.</p>
         </div>
       </DialogContent>
