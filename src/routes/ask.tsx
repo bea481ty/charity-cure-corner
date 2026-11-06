@@ -58,7 +58,7 @@ function Ask() {
         {error && <p role="alert" className="rounded-xl bg-muted p-3 text-sm text-destructive">{error}</p>}
         {answer && (
           <div className="space-y-3 rounded-2xl bg-card p-4 shadow-sm">
-            <p className="whitespace-pre-line text-sm">{answer}</p>
+            <p className="whitespace-pre-line text-sm">{answer.replace(/\*\*/g, "")}</p>
             {mentioned.length > 0 && (
               <div className="flex flex-wrap gap-2">
                 {mentioned.map((p) => <Link key={p.id} to="/product/$id" params={{ id: p.id }} className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground">View {p.name}</Link>)}
