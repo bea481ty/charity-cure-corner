@@ -33,7 +33,9 @@ function Chat() {
   const [msgs, setMsgs] = useState<Msg[]>([{ from: "shop", text: "Hello 👋 I'm Charity. How can I help you today?" }]);
   const [text, setText] = useState("");
   const end = useRef<HTMLDivElement>(null);
-  useEffect(() => end.current?.scrollIntoView({ behavior: "smooth" }), [msgs]);
+  useEffect(() => {
+    end.current?.scrollIntoView({ behavior: "smooth" });
+  }, [msgs]);
 
   const send = (t: string) => {
     if (!t.trim()) return;
