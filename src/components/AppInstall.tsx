@@ -44,14 +44,18 @@ export function AppInstall() {
     setBusy(true);
     try {
       await prompt.prompt();
-      await prompt.userChoice;
+      const choice = await prompt.userChoice;
+      if (choice.outcome === 'accepted') {
+        setInstalled(true);
+        setHelp(false);
+      }
       setPrompt(null);
     } catch { setHelp(true); }
     finally { setBusy(false); }
   };
 
   return <>
-    <div className="mx-auto flex max-w-md items-center justify-between gap-3 border-b border-border px-5 py-2">
+    <div className="mx-auto flex max-w-md flex-wrap items-center justify-between gap-3 border-b border-border px-5 py-2">
       <span className="flex min-w-0 items-center gap-2 text-xs font-semibold text-primary"><img src={icon} alt="" width={28} height={28} className="h-7 w-7 rounded-md" />Your Neighbour Chemist</span>
       {installed ? <Check aria-label="App installed" className="h-4 w-4 shrink-0 text-primary" /> : <Button size="sm" onClick={install} disabled={busy} className="shrink-0"><Download />{busy ? 'Installing…' : 'Add to Home Screen'}</Button>}
     </div>
