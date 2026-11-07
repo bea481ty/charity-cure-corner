@@ -9,8 +9,8 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // Query-qualified precache documents never intercept normal navigations.
 // NetworkFirst serves fresh HTML online and uses the matching saved page offline.
-const offlinePaths = ["/", "/shop", "/cart", "/checkout", "/chat", "/tips", "/contact",
-  ...["paracetamol-500", "malaria-test-kit", "ibuprofen-400", "artemether-lumefantrine", "vitamin-c-1000", "multivitamin", "baby-diapers", "ors-sachets", "plaster-strips", "antiseptic-liquid"].map(id => `/product/${id}`)];
+const offlinePaths = ["/", "/shop", "/cart", "/checkout", "/chat", "/tips", "/contact", "/ask",
+  ...["paracetamol-500", "malaria-test-kit"].map(id => `/product/${id}`)];
 const pwaPlugins = VitePWA({
   strategies: "generateSW", filename: "sw.js", registerType: "autoUpdate",
   injectRegister: null, manifest: false, devOptions: { enabled: false },
