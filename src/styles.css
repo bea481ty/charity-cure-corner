@@ -27,6 +27,7 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--background);
+  --color-product-photo: var(--product-photo);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -106,9 +107,11 @@
   --muted-foreground: oklch(0.45 0.04 155);
   --border: oklch(0.88 0.03 100);
   --font-display: "Fraunces", serif;
+  --product-photo: oklch(1 0 0);
 }
 
 .dark {
+  --product-photo: oklch(1 0 0);
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.208 0.042 265.755);
@@ -154,3 +157,5 @@
     color: var(--color-foreground);
   }
 }
+
+.product-photo { background-color: var(--product-photo); }
