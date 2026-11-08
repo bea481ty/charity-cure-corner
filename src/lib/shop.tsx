@@ -27,6 +27,7 @@ export const CATEGORIES = ["Pain Relief", "Malaria & Fever", "Vitamins", "Baby &
 
 export const PRODUCTS: Product[] = SUPPLIED_CATALOGUE.map((item) => {
   const photo = PRODUCT_PHOTOS[item.photoKey];
+  if (!photo) throw new Error(`Missing product photo: ${item.photoKey}`);
   return {
     ...item,
     image: photo.url,
