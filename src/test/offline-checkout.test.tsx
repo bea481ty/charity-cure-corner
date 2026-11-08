@@ -10,7 +10,7 @@ vi.mock('@/components/BottomNav', () => ({ PageHeader: () => null }));
 const clear = vi.fn();
 vi.mock('@/lib/shop', async importOriginal => ({
   ...await importOriginal<typeof import('@/lib/shop')>(),
-  useCart: () => ({ lines: [{ id: 'paracetamol-500', qty: 2 }], total: 2400, clear }),
+  useCart: () => ({ lines: [{ id: 'paracetamol-500', qty: 2 }], total: 1000, clear }),
 }));
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 it('does not hand off or clear an order while offline and retains customer details', () => {
@@ -25,5 +25,5 @@ it('does not hand off or clear an order while offline and retains customer detai
   expect(open).not.toHaveBeenCalled();
   expect(clear).not.toHaveBeenCalled();
   expect(screen.getByRole('textbox', { name: 'Full name' })).toHaveValue('Test Customer');
-  expect(screen.getAllByText('₦2,400')).toHaveLength(2);
+  expect(screen.getAllByText('₦1,000')).toHaveLength(2);
 });
