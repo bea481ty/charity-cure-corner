@@ -1,4 +1,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { SUPPLIED_CATALOGUE } from "@/lib/catalogue";
+import { PRODUCT_PHOTOS } from "@/lib/product-photos";
 
 // Current shop contact; all customer-facing links share this number.
 export const WHATSAPP_NUMBER = "2348153515916";
@@ -15,14 +17,24 @@ export type Product = {
   category: string;
   description: string;
   popular?: boolean;
+  form: string;
+  prescriptionRequired: boolean;
+  image: string;
+  representativeImage: boolean;
 };
 
-export const CATEGORIES = ["Pain Relief", "Malaria & Fever", "Vitamins", "Baby & Mother", "First Aid"] as const;
+export const CATEGORIES = ["Pain Relief", "Malaria & Fever", "Vitamins", "Baby & Mother", "First Aid", "Antibiotics", "Stomach Care", "Worm Treatment", "Cough & Cold", "Allergy & Other Medicines"] as const;
 
-export const PRODUCTS: Product[] = [
-  { id: "paracetamol-500", name: "Paracetamol 500mg", note: "Confirm pack size with Charity", price: 1200, category: "Pain Relief", popular: true, description: "Paracetamol is used for pain and fever. Ask Charity to confirm the brand, pack size, current availability and whether it is suitable for you. Follow the supplied label and pharmacist's advice." },
-  { id: "malaria-test-kit", name: "Malaria Test Kit", note: "Confirm kit details with Charity", price: 2500, category: "Malaria & Fever", popular: true, description: "A test kit for checking for malaria. Ask Charity to confirm the available brand, instructions and current availability. Seek professional advice about symptoms and test results." },
-];
+export const PRODUCTS: Product[] = SUPPLIED_CATALOGUE.map((item) => {
+  const photo = PRODUCT_PHOTOS[item.photoKey];
+  return {
+    ...item,
+    image: photo.url,
+    representativeImage: photo.representative,
+    note: item.form,
+    description: `${item.name}. Confirm the available brand, pack size and suitability with Charity. Follow the supplied label and professional advice.${item.prescriptionRequired ? " Prescription required; do not use antibiotics without a valid prescription." : ""}`,
+  };
+});
 
 export const formatNaira = (n: number) => `₦${n.toLocaleString("en-NG")}`;
 

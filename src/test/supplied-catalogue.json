@@ -1,0 +1,390 @@
+[
+  {
+    "name": "Paracetamol 500mg (1 card / 12 tabs)",
+    "price": 500
+  },
+  {
+    "name": "Panadol Extra (1 card)",
+    "price": 700
+  },
+  {
+    "name": "Sudrex Headache & Fever (20 caplets)",
+    "price": 600
+  },
+  {
+    "name": "Sudrex Joint & Muscle Pain (10 caps)",
+    "price": 500
+  },
+  {
+    "name": "Ibuprofen 400mg (1 pack)",
+    "price": 1000
+  },
+  {
+    "name": "Diclofenac 50mg",
+    "price": 1200
+  },
+  {
+    "name": "Aspirin 300mg",
+    "price": 500
+  },
+  {
+    "name": "Coartem 80/480 (6 tabs)",
+    "price": 13500
+  },
+  {
+    "name": "Coartem 20/120 (24 tabs)",
+    "price": 1600
+  },
+  {
+    "name": "Artequick",
+    "price": 8250
+  },
+  {
+    "name": "Lonart / Amatem",
+    "price": 6000
+  },
+  {
+    "name": "P-Alaxin",
+    "price": 5500
+  },
+  {
+    "name": "Camosunate (6 sachets)",
+    "price": 3000
+  },
+  {
+    "name": "Amoxicillin 500mg (1 pack)",
+    "price": 2500
+  },
+  {
+    "name": "Amoxil Beecham 500mg (10 caps)",
+    "price": 3000
+  },
+  {
+    "name": "Ampicillin 250mg / Starnicillin (10 caps)",
+    "price": 600
+  },
+  {
+    "name": "Ampiclox / Euroclox 500mg (10 caps)",
+    "price": 1150
+  },
+  {
+    "name": "Beecham Ampiclox 500mg (10 caps)",
+    "price": 7500
+  },
+  {
+    "name": "Augmentin 625mg (14 tabs)",
+    "price": 12300
+  },
+  {
+    "name": "Augmentin 1g",
+    "price": 13300
+  },
+  {
+    "name": "Azithromycin / Zithromax",
+    "price": 3500
+  },
+  {
+    "name": "Ciprofloxacin 500mg",
+    "price": 2900
+  },
+  {
+    "name": "Flagyl / Metronidazole 400mg",
+    "price": 1200
+  },
+  {
+    "name": "Doxycycline 100mg",
+    "price": 1500
+  },
+  {
+    "name": "Ulsakit Kit (H. pylori)",
+    "price": 37500
+  },
+  {
+    "name": "Vitamin C 500mg (20 tabs)",
+    "price": 1500
+  },
+  {
+    "name": "Vitamin B Complex / Em-B-Plex (100 tabs)",
+    "price": 650
+  },
+  {
+    "name": "Centrum Advance 30 tabs",
+    "price": 12500
+  },
+  {
+    "name": "Centrum Kids Chewable 30 tabs",
+    "price": 9000
+  },
+  {
+    "name": "Haliborange A,C & D 60 Chewable",
+    "price": 9600
+  },
+  {
+    "name": "Junior-Vit Chewable 2yrs+ 30 tabs",
+    "price": 3600
+  },
+  {
+    "name": "Folic Acid 5mg",
+    "price": 500
+  },
+  {
+    "name": "Iron + Folic Acid",
+    "price": 1500
+  },
+  {
+    "name": "Calcium + Vitamin D",
+    "price": 4500
+  },
+  {
+    "name": "Cod Liver Oil Capsules",
+    "price": 5500
+  },
+  {
+    "name": "Pregnacare / Prenatal Vitamins",
+    "price": 12000
+  },
+  {
+    "name": "Omeprazole 20mg",
+    "price": 2000
+  },
+  {
+    "name": "Gestid Antacid",
+    "price": 1000
+  },
+  {
+    "name": "Buscopan",
+    "price": 2500
+  },
+  {
+    "name": "ORS Sachet",
+    "price": 500
+  },
+  {
+    "name": "Albendazole 400mg tablet",
+    "price": 2000
+  },
+  {
+    "name": "Mebendazole / Vermox",
+    "price": 1800
+  },
+  {
+    "name": "Piriton / Chlorpheniramine",
+    "price": 500
+  },
+  {
+    "name": "Loratadine / Claritin",
+    "price": 2000
+  },
+  {
+    "name": "Actifed (Catarrh)",
+    "price": 2500
+  },
+  {
+    "name": "Amlodipine 5mg (BP)",
+    "price": 3000
+  },
+  {
+    "name": "Metformin (Sugar)",
+    "price": 3000
+  },
+  {
+    "name": "Amatem Suspension 60ml",
+    "price": 5000
+  },
+  {
+    "name": "Shal'Artem Suspension 60ml",
+    "price": 4500
+  },
+  {
+    "name": "Amoxicillin Syrup 125mg/5ml 60ml",
+    "price": 2500
+  },
+  {
+    "name": "Ampiclox Suspension 125mg/5ml 60ml",
+    "price": 3500
+  },
+  {
+    "name": "Beecham Ampiclox Suspension 100ml",
+    "price": 14000
+  },
+  {
+    "name": "Azithromycin Suspension (kids)",
+    "price": 3500
+  },
+  {
+    "name": "Septrin Suspension 100ml",
+    "price": 2500
+  },
+  {
+    "name": "Erythromycin Suspension 60ml",
+    "price": 2800
+  },
+  {
+    "name": "Benylin Adult Chesty Cough 150ml",
+    "price": 2620
+  },
+  {
+    "name": "Benylin Dry & Tickly Cough 150ml",
+    "price": 15700
+  },
+  {
+    "name": "Benylin Mucus Cough Max Honey & Lemon 150ml",
+    "price": 18000
+  },
+  {
+    "name": "Benylin 4 Flu Liquid 200ml",
+    "price": 2700
+  },
+  {
+    "name": "Komix Cough Syrup 100ml",
+    "price": 3500
+  },
+  {
+    "name": "Tixylix Baby Syrup",
+    "price": 12600
+  },
+  {
+    "name": "Cofex Cough Syrup",
+    "price": 490
+  },
+  {
+    "name": "Viscof Expectorant 100ml",
+    "price": 850
+  },
+  {
+    "name": "Benylin Paediatric Cough 100ml",
+    "price": 3700
+  },
+  {
+    "name": "Benylin Paediatric Cough Age 2+ 100ml",
+    "price": 1200
+  },
+  {
+    "name": "Benylin Wet Cough for Kids",
+    "price": 6850
+  },
+  {
+    "name": "Emzor Paracetamol Syrup 125mg/5ml 60ml",
+    "price": 1000
+  },
+  {
+    "name": "Panda Paracetamol Syrup 60ml",
+    "price": 1000
+  },
+  {
+    "name": "Bonadol Paracetamol Syrup 60ml",
+    "price": 900
+  },
+  {
+    "name": "Emcap Paracetamol Suspension 60ml",
+    "price": 700
+  },
+  {
+    "name": "Calpol Infant Suspension 100ml",
+    "price": 16600
+  },
+  {
+    "name": "Calpol SixPlus 250mg/5ml",
+    "price": 22900
+  },
+  {
+    "name": "Bonababe Baby Teething Mixture 60ml",
+    "price": 1000
+  },
+  {
+    "name": "Babyrex Baby Mixture 60ml",
+    "price": 500
+  },
+  {
+    "name": "Emzor Fimin Teething Syrup 100ml",
+    "price": 500
+  },
+  {
+    "name": "Gripe Water / Dill Water (Colic) 120ml",
+    "price": 2000
+  },
+  {
+    "name": "Zinc Syrup",
+    "price": 1200
+  },
+  {
+    "name": "Vitamin C Syrup 100ml",
+    "price": 2000
+  },
+  {
+    "name": "B-Complex Syrup 100ml",
+    "price": 1500
+  },
+  {
+    "name": "Astymin Multivitamin Syrup 200ml",
+    "price": 7000
+  },
+  {
+    "name": "Feroglobin / Blood Tonic Syrup 200ml",
+    "price": 6500
+  },
+  {
+    "name": "Vitamin D3 Drops for Baby",
+    "price": 6000
+  },
+  {
+    "name": "Gaviscon Liquid 200ml",
+    "price": 8500
+  },
+  {
+    "name": "Albendazole Suspension",
+    "price": 3500
+  },
+  {
+    "name": "Pyrantel Pamoate / Combantrin Suspension",
+    "price": 3000
+  },
+  {
+    "name": "Gentamicin Cream",
+    "price": 1200
+  },
+  {
+    "name": "Funbact-A Cream",
+    "price": 2500
+  },
+  {
+    "name": "Betadine / Iodine Solution",
+    "price": 2500
+  },
+  {
+    "name": "Methylated Spirit",
+    "price": 1000
+  },
+  {
+    "name": "Cotton Wool + Plaster",
+    "price": 1500
+  },
+  {
+    "name": "Tetracycline Eye Ointment",
+    "price": 1000
+  },
+  {
+    "name": "Otex Ear Drops",
+    "price": 4000
+  },
+  {
+    "name": "Ventolin Inhaler (Asthma)",
+    "price": 8870
+  },
+  {
+    "name": "Vicks VapoRub",
+    "price": 3500
+  },
+  {
+    "name": "Mentholatum / Robb Balm",
+    "price": 2000
+  },
+  {
+    "name": "Teething Gel (Bonjela)",
+    "price": 5500
+  },
+  {
+    "name": "Malaria Test Kit",
+    "price": 2500
+  }
+]

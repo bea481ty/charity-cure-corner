@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Minus, Plus, Trash2, Pill } from "lucide-react";
+import { Minus, Plus, Trash2 } from "lucide-react";
 import { PRODUCTS, formatNaira, useCart } from "@/lib/shop";
 import { PageHeader } from "@/components/BottomNav";
+import { ProductImage } from "@/components/ProductImage";
 
 export const Route = createFileRoute("/cart")({
   head: () => ({
@@ -37,7 +38,7 @@ function Cart() {
                 if (!p) return null;
                 return (
                   <li key={l.id} className="flex items-center gap-3 rounded-2xl bg-card p-3 shadow-sm">
-                    <Link to="/product/$id" params={{ id: p.id }} className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-muted text-primary"><Pill className="h-6 w-6" /></Link>
+                    <Link to="/product/$id" params={{ id: p.id }} className="h-14 w-14 shrink-0"><ProductImage product={p} /></Link>
                     <div className="min-w-0 flex-1">
                       <p className="truncate text-sm font-bold">{p.name}</p>
                       <p className="text-xs text-muted-foreground">{formatNaira(p.price)} each</p>

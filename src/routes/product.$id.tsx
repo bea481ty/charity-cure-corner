@@ -1,8 +1,9 @@
 import { createFileRoute, Link, notFound, useRouter } from "@tanstack/react-router";
 import { useState } from "react";
-import { Pill, Minus, Plus, MessageCircle } from "lucide-react";
+import { Minus, Plus, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 import { PRODUCTS, formatNaira, useCart, whatsappLink } from "@/lib/shop";
+import { ProductImage } from "@/components/ProductImage";
 
 export const Route = createFileRoute("/product/$id")({
   loader: ({ params }) => {
@@ -41,12 +42,14 @@ function ProductPage() {
     <div className="mx-auto max-w-md pb-28">
       <header className="rounded-b-[2rem] bg-primary px-5 pb-6 pt-7 text-primary-foreground">
         <button onClick={() => router.history.back()} className="text-xs text-accent">← Back</button>
-        <div className="mt-4 flex h-40 items-center justify-center rounded-2xl bg-muted text-primary"><Pill className="h-16 w-16" /></div>
+        <ProductImage product={p} className="mt-4 max-h-80" eager />
       </header>
       <div className="px-5 pt-5">
         <Link to="/shop" search={{ cat: p.category }} className="text-xs font-semibold text-accent">{p.category}</Link>
         <h1 className="mt-1 text-2xl font-bold text-primary" style={{ fontFamily: "var(--font-display)" }}>{p.name}</h1>
         <p className="text-sm text-muted-foreground">{p.note}</p>
+        {p.representativeImage && <p className="mt-2 text-xs text-muted-foreground">Similar product photo. Brand, strength or packaging may differ; confirm with Charity.</p>}
+        {p.prescriptionRequired && <p className="mt-2 text-sm font-semibold text-destructive">Prescription required</p>}
         <p className="mt-3 text-2xl font-bold text-primary">{formatNaira(p.price)}</p>
         <p className="mt-4 text-sm leading-relaxed">{p.description}</p>
 
