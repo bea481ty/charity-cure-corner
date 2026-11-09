@@ -21,7 +21,15 @@ export const Route = createFileRoute("/product/$id")({
           { property: "og:type", content: "product" },
           { name: "twitter:card", content: "summary" },
         ]
-      : [{ title: "Product unavailable – Charity's Cure Corner" }, { name: "robots", content: "noindex" }],
+      : [
+          { title: "Product unavailable – Charity's Cure Corner" },
+          { name: "description", content: "This product is unavailable. Browse the current Charity's Cure Corner catalogue." },
+          { property: "og:title", content: "Product unavailable – Charity's Cure Corner" },
+          { property: "og:description", content: "Browse the current Charity's Cure Corner catalogue for available products." },
+          { property: "og:type", content: "website" },
+          { name: "twitter:card", content: "summary" },
+          { name: "robots", content: "noindex" },
+        ],
   }),
   notFoundComponent: () => (
     <div className="mx-auto max-w-md p-8 text-center">

@@ -14,3 +14,4 @@
 - WhatsApp checkout is an external handoff, not a confirmed order; retain the cart and reject sending while offline to prevent lost orders.
 - Validate restored cart entries against the active catalogue so removed products cannot remain orderable.
 - Keep supplied catalogue data separate from photo mappings and use ProductImage across cards, details and carts; shared sizing and truthful representative labels prevent inconsistent or misleading product images.
+- Keep catalogue additions in a separate browser-safe data module and derive shop categories from the combined catalogue so new goods are discoverable without changing earlier entries.

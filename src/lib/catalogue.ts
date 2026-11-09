@@ -1,3 +1,5 @@
+import { CATALOGUE_ADDITIONS } from "@/lib/catalogue-additions";
+
 export const SUPPLIED_CATALOGUE = [
   {
     "id": "paracetamol-500",
@@ -969,4 +971,5 @@ export const SUPPLIED_CATALOGUE = [
     "prescriptionRequired": false,
     "popular": true
   }
+  , ...CATALOGUE_ADDITIONS
 ] as const;

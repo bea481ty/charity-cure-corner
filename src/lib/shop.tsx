@@ -23,7 +23,7 @@ export type Product = {
   representativeImage: boolean;
 };
 
-export const CATEGORIES = ["Pain Relief", "Malaria & Fever", "Vitamins", "Baby & Mother", "First Aid", "Antibiotics", "Stomach Care", "Worm Treatment", "Cough & Cold", "Allergy & Other Medicines"] as const;
+export const CATEGORIES = [...new Set(SUPPLIED_CATALOGUE.map(item => item.category))];
 
 export const PRODUCTS: Product[] = SUPPLIED_CATALOGUE.map((item) => {
   const photo = PRODUCT_PHOTOS[item.photoKey];
@@ -33,7 +33,7 @@ export const PRODUCTS: Product[] = SUPPLIED_CATALOGUE.map((item) => {
     image: photo.url,
     representativeImage: photo.representative,
     note: item.form,
-    description: `${item.name}. Confirm the available brand, pack size and suitability with Charity. Follow the supplied label and professional advice.${item.prescriptionRequired ? " Prescription required; do not use antibiotics without a valid prescription." : ""}`,
+    description: `${item.name}. Confirm the available brand, pack size and suitability with Charity. Follow the supplied label and professional advice.${item.prescriptionRequired ? " Prescription required; use only with a valid prescription and professional guidance." : ""}`,
   };
 });
 
