@@ -1,0 +1,738 @@
+[
+  {
+    "id": "losartan-50mg",
+    "name": "Losartan 50mg",
+    "price": 4500,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "BP / Heart"
+  },
+  {
+    "id": "lisinopril-10mg",
+    "name": "Lisinopril 10mg",
+    "price": 3500,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "BP / Heart"
+  },
+  {
+    "id": "atenolol-50mg",
+    "name": "Atenolol 50mg",
+    "price": 2500,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "BP / Heart"
+  },
+  {
+    "id": "nifedipine-20mg",
+    "name": "Nifedipine 20mg",
+    "price": 2000,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "BP / Heart"
+  },
+  {
+    "id": "aspirin-75mg-cardio",
+    "name": "Aspirin 75mg Cardio",
+    "price": 1500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "BP / Heart"
+  },
+  {
+    "id": "furosemide-lasix-40mg",
+    "name": "Furosemide / Lasix 40mg",
+    "price": 1000,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "BP / Heart"
+  },
+  {
+    "id": "glibenclamide-5mg",
+    "name": "Glibenclamide 5mg",
+    "price": 1500,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Sugar / Diabetes"
+  },
+  {
+    "id": "glimepiride-2mg",
+    "name": "Glimepiride 2mg",
+    "price": 3000,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Sugar / Diabetes"
+  },
+  {
+    "id": "metformin-850mg",
+    "name": "Metformin 850mg",
+    "price": 3500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Sugar / Diabetes"
+  },
+  {
+    "id": "cefuroxime-500mg-zinnat",
+    "name": "Cefuroxime 500mg (Zinnat)",
+    "price": 8500,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Antibiotics"
+  },
+  {
+    "id": "levofloxacin-500mg",
+    "name": "Levofloxacin 500mg",
+    "price": 4500,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Antibiotics"
+  },
+  {
+    "id": "cefixime-400mg",
+    "name": "Cefixime 400mg",
+    "price": 5000,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Antibiotics"
+  },
+  {
+    "id": "tinidazole-500mg",
+    "name": "Tinidazole 500mg",
+    "price": 1800,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Antibiotics"
+  },
+  {
+    "id": "secnidazole-1g",
+    "name": "Secnidazole 1g",
+    "price": 2500,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Antibiotics"
+  },
+  {
+    "id": "ceftriaxone-injection-1g",
+    "name": "Ceftriaxone Injection 1g",
+    "price": 4500,
+    "form": "INJECTION",
+    "prescriptionRequired": true,
+    "category": "Antibiotics"
+  },
+  {
+    "id": "gentamicin-injection-80mg",
+    "name": "Gentamicin Injection 80mg",
+    "price": 1200,
+    "form": "INJECTION",
+    "prescriptionRequired": true,
+    "category": "Antibiotics"
+  },
+  {
+    "id": "artesunate-injection-60mg",
+    "name": "Artesunate Injection 60mg",
+    "price": 5500,
+    "form": "INJECTION",
+    "prescriptionRequired": false,
+    "category": "Malaria & Fever"
+  },
+  {
+    "id": "lokmal-qs-lumartem-80-480-6-tabs",
+    "name": "Lokmal QS / Lumartem 80/480 (6 tabs)",
+    "price": 4000,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Malaria & Fever"
+  },
+  {
+    "id": "d-artepp-dispersible-20-160",
+    "name": "D-Artepp Dispersible 20/160",
+    "price": 1200,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Malaria & Fever"
+  },
+  {
+    "id": "chloroquine-phosphate-250mg",
+    "name": "Chloroquine Phosphate 250mg",
+    "price": 1000,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Malaria & Fever"
+  },
+  {
+    "id": "ciprofloxacin-tinidazole-cipro-tz",
+    "name": "Ciprofloxacin + Tinidazole (Cipro-TZ)",
+    "price": 3500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Malaria & Fever"
+  },
+  {
+    "id": "diclofenac-gel-emulgel-30g",
+    "name": "Diclofenac Gel / Emulgel 30g",
+    "price": 4500,
+    "form": "GEL",
+    "prescriptionRequired": false,
+    "category": "Pain Relief"
+  },
+  {
+    "id": "feldene-piroxicam-20mg",
+    "name": "Feldene / Piroxicam 20mg",
+    "price": 1500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Pain Relief"
+  },
+  {
+    "id": "tramadol-50mg",
+    "name": "Tramadol 50mg",
+    "price": 2000,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Pain Relief"
+  },
+  {
+    "id": "paracetamol-codeine-co-codamol",
+    "name": "Paracetamol + Codeine / Co-codamol",
+    "price": 2500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Pain Relief"
+  },
+  {
+    "id": "cetirizine-10mg",
+    "name": "Cetirizine 10mg",
+    "price": 1500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Allergy & Other Medicines"
+  },
+  {
+    "id": "montelukast-10mg",
+    "name": "Montelukast 10mg",
+    "price": 4000,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Allergy & Other Medicines"
+  },
+  {
+    "id": "salbutamol-syrup-100ml",
+    "name": "Salbutamol Syrup 100ml",
+    "price": 2500,
+    "form": "SYRUP",
+    "prescriptionRequired": false,
+    "category": "Allergy & Other Medicines"
+  },
+  {
+    "id": "prednisolone-5mg",
+    "name": "Prednisolone 5mg",
+    "price": 1200,
+    "form": "TABLET",
+    "prescriptionRequired": true,
+    "category": "Allergy & Other Medicines"
+  },
+  {
+    "id": "dexamethasone-0-5mg",
+    "name": "Dexamethasone 0.5mg",
+    "price": 1000,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Allergy & Other Medicines"
+  },
+  {
+    "id": "strepsils-lozenges",
+    "name": "Strepsils Lozenges",
+    "price": 2500,
+    "form": "LOZENGES",
+    "prescriptionRequired": false,
+    "category": "Allergy & Other Medicines"
+  },
+  {
+    "id": "esomeprazole-40mg",
+    "name": "Esomeprazole 40mg",
+    "price": 4000,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Stomach Care"
+  },
+  {
+    "id": "pantoprazole-40mg",
+    "name": "Pantoprazole 40mg",
+    "price": 3500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Stomach Care"
+  },
+  {
+    "id": "ranitidine-150mg",
+    "name": "Ranitidine 150mg",
+    "price": 1800,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Stomach Care"
+  },
+  {
+    "id": "loperamide-imodium",
+    "name": "Loperamide / Imodium",
+    "price": 1500,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Stomach Care"
+  },
+  {
+    "id": "flagyl-suspension-100ml",
+    "name": "Flagyl Suspension 100ml",
+    "price": 2800,
+    "form": "SYRUP",
+    "prescriptionRequired": false,
+    "category": "Stomach Care"
+  },
+  {
+    "id": "hydrocortisone-cream",
+    "name": "Hydrocortisone Cream",
+    "price": 2000,
+    "form": "CREAM",
+    "prescriptionRequired": false,
+    "category": "Skin / Eye / Ear"
+  },
+  {
+    "id": "clotrimazole-cream",
+    "name": "Clotrimazole Cream",
+    "price": 2500,
+    "form": "CREAM",
+    "prescriptionRequired": false,
+    "category": "Skin / Eye / Ear"
+  },
+  {
+    "id": "miconazole-cream",
+    "name": "Miconazole Cream",
+    "price": 2200,
+    "form": "CREAM",
+    "prescriptionRequired": false,
+    "category": "Skin / Eye / Ear"
+  },
+  {
+    "id": "chloramphenicol-eye-drops",
+    "name": "Chloramphenicol Eye Drops",
+    "price": 1500,
+    "form": "DROPS",
+    "prescriptionRequired": false,
+    "category": "Skin / Eye / Ear"
+  },
+  {
+    "id": "tetracycline-eye-drops",
+    "name": "Tetracycline Eye Drops",
+    "price": 1200,
+    "form": "DROPS",
+    "prescriptionRequired": false,
+    "category": "Skin / Eye / Ear"
+  },
+  {
+    "id": "ear-wax-drops",
+    "name": "Ear Wax Drops",
+    "price": 3000,
+    "form": "DROPS",
+    "prescriptionRequired": false,
+    "category": "Skin / Eye / Ear"
+  },
+  {
+    "id": "zinc-sulphate-20mg-tablet",
+    "name": "Zinc Sulphate 20mg Tablet",
+    "price": 1000,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "ors-zinc-co-pack",
+    "name": "ORS + Zinc Co-pack",
+    "price": 1500,
+    "form": "SACHET",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "ferrous-sulphate-blood",
+    "name": "Ferrous Sulphate (Blood)",
+    "price": 1800,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "vitamin-a-capsule",
+    "name": "Vitamin A Capsule",
+    "price": 800,
+    "form": "CAPSULE",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "septrin-tablet-480mg",
+    "name": "Septrin Tablet 480mg",
+    "price": 1200,
+    "form": "TABLET",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "nystatin-oral-drops",
+    "name": "Nystatin Oral Drops",
+    "price": 3500,
+    "form": "DROPS",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "dettol-antiseptic-500ml",
+    "name": "Dettol Antiseptic 500ml",
+    "price": 5500,
+    "form": "LIQUID",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "savlon-antiseptic-500ml",
+    "name": "Savlon Antiseptic 500ml",
+    "price": 4500,
+    "form": "LIQUID",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "hydrogen-peroxide",
+    "name": "Hydrogen Peroxide",
+    "price": 1500,
+    "form": "LIQUID",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "surgical-spirit",
+    "name": "Surgical Spirit",
+    "price": 1500,
+    "form": "LIQUID",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "hand-gloves-1-pair",
+    "name": "Hand Gloves (1 pair)",
+    "price": 500,
+    "form": "OTHERS",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "face-mask-1-pc",
+    "name": "Face Mask (1 pc)",
+    "price": 300,
+    "form": "OTHERS",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "digital-thermometer",
+    "name": "Digital Thermometer",
+    "price": 4000,
+    "form": "OTHERS",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "blood-pressure-machine",
+    "name": "Blood Pressure Machine",
+    "price": 28000,
+    "form": "OTHERS",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "glucometer-strips",
+    "name": "Glucometer + Strips",
+    "price": 25000,
+    "form": "OTHERS",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "pregnancy-test-strip",
+    "name": "Pregnancy Test Strip",
+    "price": 1500,
+    "form": "KIT",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "condoms-1-pack-of-3",
+    "name": "Condoms (1 pack of 3)",
+    "price": 2000,
+    "form": "OTHERS",
+    "prescriptionRequired": false,
+    "category": "First Aid"
+  },
+  {
+    "id": "nivea-nourishing-cocoa-body-lotion-400ml",
+    "name": "Nivea Nourishing Cocoa Body Lotion 400ml",
+    "price": 3500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "nivea-perfect-radiant-body-lotion-400ml",
+    "name": "Nivea Perfect & Radiant Body Lotion 400ml",
+    "price": 3800,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "nivea-extra-white-firm-smooth-400ml",
+    "name": "Nivea Extra White Firm & Smooth 400ml",
+    "price": 4000,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "vaseline-cocoa-glow-body-lotion-400ml",
+    "name": "Vaseline Cocoa Glow Body Lotion 400ml",
+    "price": 3500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "vaseline-even-tone-body-lotion-400ml",
+    "name": "Vaseline Even Tone Body Lotion 400ml",
+    "price": 3500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "vaseline-dry-skin-repair-body-lotion-400ml",
+    "name": "Vaseline Dry Skin Repair Body Lotion 400ml",
+    "price": 3500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "dove-body-love-light-hydration-400ml",
+    "name": "Dove Body Love Light Hydration 400ml",
+    "price": 5500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "dove-nourishing-secrets-glowing-body-lotion",
+    "name": "Dove Nourishing Secrets Glowing Body Lotion",
+    "price": 4000,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "palmer-s-cocoa-butter-lotion-400ml",
+    "name": "Palmer's Cocoa Butter Lotion 400ml",
+    "price": 5500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "st-ives-oatmeal-shea-butter-lotion",
+    "name": "St. Ives Oatmeal & Shea Butter Lotion",
+    "price": 6000,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Everyday Body Lotion"
+  },
+  {
+    "id": "vaseline-blueseal-original-petroleum-jelly-50ml",
+    "name": "Vaseline Blueseal Original Petroleum Jelly 50ml",
+    "price": 400,
+    "form": "JELLY",
+    "prescriptionRequired": false,
+    "category": "Vaseline / Jelly"
+  },
+  {
+    "id": "vaseline-blueseal-cocoa-butter-jelly-45ml",
+    "name": "Vaseline Blueseal Cocoa Butter Jelly 45ml",
+    "price": 450,
+    "form": "JELLY",
+    "prescriptionRequired": false,
+    "category": "Vaseline / Jelly"
+  },
+  {
+    "id": "vaseline-blueseal-original-400ml",
+    "name": "Vaseline Blueseal Original 400ml",
+    "price": 2200,
+    "form": "JELLY",
+    "prescriptionRequired": false,
+    "category": "Vaseline / Jelly"
+  },
+  {
+    "id": "vaseline-blueseal-aloe-fresh-220ml",
+    "name": "Vaseline Blueseal Aloe Fresh 220ml",
+    "price": 2000,
+    "form": "JELLY",
+    "prescriptionRequired": false,
+    "category": "Vaseline / Jelly"
+  },
+  {
+    "id": "nivea-soft-cream-200ml",
+    "name": "Nivea Soft Cream 200ml",
+    "price": 4500,
+    "form": "CREAM",
+    "prescriptionRequired": false,
+    "category": "Nivea Cream"
+  },
+  {
+    "id": "nivea-creme-blue-tin-150ml",
+    "name": "Nivea Creme (Blue Tin) 150ml",
+    "price": 4000,
+    "form": "CREAM",
+    "prescriptionRequired": false,
+    "category": "Nivea Cream"
+  },
+  {
+    "id": "nivea-cocoa-butter-body-cream-400ml",
+    "name": "Nivea Cocoa Butter Body Cream 400ml",
+    "price": 5500,
+    "form": "CREAM",
+    "prescriptionRequired": false,
+    "category": "Nivea Cream"
+  },
+  {
+    "id": "nivea-men-deep-body-lotion-400ml",
+    "name": "Nivea Men Deep Body Lotion 400ml",
+    "price": 3500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "For Men"
+  },
+  {
+    "id": "nivea-men-revitalizing-lotion-200ml",
+    "name": "Nivea Men Revitalizing Lotion 200ml",
+    "price": 1500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "For Men"
+  },
+  {
+    "id": "cussons-baby-mild-gentle-lotion-400ml",
+    "name": "Cussons Baby Mild & Gentle Lotion 400ml",
+    "price": 3500,
+    "form": "BABY LOTION",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "johnson-s-baby-lotion-500ml",
+    "name": "Johnson's Baby Lotion 500ml",
+    "price": 5000,
+    "form": "BABY LOTION",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "johnson-s-baby-oil-200ml",
+    "name": "Johnson's Baby Oil 200ml",
+    "price": 3000,
+    "form": "BABY OIL",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "shea-butter-ori-original-shea-butter-280g",
+    "name": "Shea Butter / Ori - Original Shea Butter 280g",
+    "price": 3500,
+    "form": "SHEA BUTTER",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "sudocrem-nappy-cream-125g",
+    "name": "Sudocrem Nappy Cream 125g",
+    "price": 5000,
+    "form": "BABY CREAM",
+    "prescriptionRequired": false,
+    "category": "Baby & Mother"
+  },
+  {
+    "id": "e45-moisturizing-lotion",
+    "name": "E45 Moisturizing Lotion",
+    "price": 8000,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Medicated / Skin Problem"
+  },
+  {
+    "id": "cerave-moisturising-lotion",
+    "name": "CeraVe Moisturising Lotion",
+    "price": 12000,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "Medicated / Skin Problem"
+  },
+  {
+    "id": "sivoderm-cream",
+    "name": "Sivoderm Cream",
+    "price": 2500,
+    "form": "CREAM",
+    "prescriptionRequired": false,
+    "category": "Medicated / Skin Problem"
+  },
+  {
+    "id": "shea-butter-coconut-oil-mix",
+    "name": "Shea Butter + Coconut Oil Mix",
+    "price": 4500,
+    "form": "SHEA BUTTER",
+    "prescriptionRequired": false,
+    "category": "Medicated / Skin Problem"
+  },
+  {
+    "id": "caro-white-lotion",
+    "name": "Caro White Lotion",
+    "price": 7500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "For Glow / Toning"
+  },
+  {
+    "id": "fair-white-so-white-lotion",
+    "name": "Fair & White So White Lotion",
+    "price": 15000,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "For Glow / Toning"
+  },
+  {
+    "id": "bismid-egyptian-magic-white-lotion-300ml",
+    "name": "Bismid Egyptian Magic White Lotion 300ml",
+    "price": 9500,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "For Glow / Toning"
+  },
+  {
+    "id": "venus-toning-lotion-200ml",
+    "name": "Venus Toning Lotion 200ml",
+    "price": 1800,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "For Glow / Toning"
+  },
+  {
+    "id": "venus-moisturising-lotion-200ml",
+    "name": "Venus Moisturising Lotion 200ml",
+    "price": 1000,
+    "form": "LOTION",
+    "prescriptionRequired": false,
+    "category": "For Glow / Toning"
+  }
+]
